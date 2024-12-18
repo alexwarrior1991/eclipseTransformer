@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <meta charset="UTF-8"/>
+        <title>Ejemplo de Layout - PrimeFaces 8</title>
+        <h:outputStylesheet>
+            .header, .menu, .content {
+                padding: 10px;
+                color: white;
+            }
+            .header {
+                background-color: #3F51B5;
+            }
+            .menu {
+                background-color: #FFC107;
+            }
+            .content {
+                background-color: #0F9D58;
+            }
+        </h:outputStylesheet>
+    </h:head>
+    <h:body>
+        <!-- Layout principal -->
+        <p:layout fullPage="true">
+            <!-- Encabezado -->
+            <p:layoutUnit position="north" header="Encabezado" size="60">
+                <div class="header">
+                    <!-- Texto dinámico desde el Bean -->
+                    <h:outputText value="#{layoutBean.headerText}" />
+                </div>
+            </p:layoutUnit>
+
+            <!-- Menú lateral izquierdo -->
+            <p:layoutUnit position="west" header="Menú Lateral" size="200" expandable="true">
+                <div class="menu">
+                    <!-- Texto dinámico desde el Bean -->
+                    <h:outputText value="#{layoutBean.menuText}" />
+                    <ul>
+                        <li>Inicio</li>
+                        <li>Perfil</li>
+                        <li>Configuración</li>
+                    </ul>
+                </div>
+            </p:layoutUnit>
+
+            <!-- Contenido central -->
+            <p:layoutUnit position="center">
+                <div class="content">
+                    <!-- Texto dinámico desde el Bean -->
+                    <h:outputText value="#{layoutBean.contentText}" />
+                </div>
+            </p:layoutUnit>
+        </p:layout>
+    </h:body>
+</f:view>
+</html>
