@@ -72,12 +72,12 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.primefaces</groupId>
-            <artifactId>primefaces</artifactId>
-            <version>14.0.2</version>
-            <classifier>jakarta</classifier>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.primefaces</groupId>-->
+<!--            <artifactId>primefaces</artifactId>-->
+<!--            <version>14.0.2</version>-->
+<!--            <classifier>jakarta</classifier>-->
+<!--        </dependency>-->
 <!--        <dependency>-->
 <!--            <groupId>org.primefaces.themes</groupId>-->
 <!--            <artifactId>all-themes</artifactId>-->

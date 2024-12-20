@@ -1,6 +1,8 @@
 package com.alejandro.eclipsetransformer.controller;
 
 import jakarta.annotation.ManagedBean;
+import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.context.SessionScoped;
 import jakarta.faces.application.FacesMessage;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
@@ -10,8 +12,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-@Named("beanEjemplo")
-@ManagedBean(value = "beanEjemplo")
+//@ManagedBean(value = "beanEjemplo")
+@Named( value = "beanEjemplo")
 @ViewScoped
 public class BeanEjemplo implements Serializable {
 
@@ -50,5 +52,10 @@ public class BeanEjemplo implements Serializable {
 
     public void setListaUsuarios(List<String> listaUsuarios) {
         this.listaUsuarios = listaUsuarios;
+    }
+
+    @PostConstruct
+    public void init() {
+        System.out.println("BeanEjemplo se ha inicializado.");
     }
 }

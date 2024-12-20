@@ -14,9 +14,9 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+//@ManagedBean(value = "scheduleBean")
 @Named("scheduleBean")
 @ViewScoped
-@ManagedBean(value = "scheduleBean")
 public class ScheduleBean implements Serializable {
 
     private ScheduleModel eventosModel;

@@ -10,10 +10,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-
+//@ManagedBean(value = "miBean")
 @Named("miBean")
 @ViewScoped
-@ManagedBean(value = "miBean")
 public class MiBean implements Serializable {
 
     private String nombre;

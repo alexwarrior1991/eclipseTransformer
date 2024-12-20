@@ -6,9 +6,9 @@ import jakarta.inject.Named;
 
 import java.io.Serializable;
 
+//@ManagedBean(value = "layoutBean")
 @ViewScoped
 @Named("layoutBean")
-@ManagedBean(value = "layoutBean")
 public class LayoutBean implements Serializable {
 
     private String headerText;
