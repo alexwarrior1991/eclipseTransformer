@@ -88,12 +88,17 @@
 <!--            <artifactId>primeflex</artifactId>-->
 <!--            <version>3.3.1</version>-->
 <!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.primefaces</groupId>-->
+<!--            <artifactId>primefaces</artifactId>-->
+<!--            <version>8.0-jakarta</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/primefaces-8.0-jakarta.jar</systemPath>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
             <version>8.0-jakarta</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/transformed-libs/primefaces-8.0-jakarta.jar</systemPath>
         </dependency>
     </dependencies>
 
